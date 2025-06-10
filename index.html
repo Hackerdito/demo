@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Psia_Demo</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700,700i&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/4-Ejes.css">
+    <link rel="stylesheet" href="assets/css/accordion-faq-list.css">
+    <link rel="stylesheet" href="assets/css/Features-Cards-icons.css">
+    <link rel="stylesheet" href="assets/css/Features-Minimal-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/navbar_uk.css">
+    <link rel="stylesheet" href="assets/css/Video-Responsive.css">
+</head>
+
+<body id="beta">
+    <nav class="navbar navbar-expand-md sticky-top bg-body py-3" style="background: #102947!important;">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><img src="assets/img/Universidad_Uk_2022.png"></a></div>
+    </nav>
+    <section style="margin-top: 120px;">
+        <div class="container" style="margin-right:  ;">
+            <div class="row">
+                <div class="col-md-6 col-xxl-4 offset-xxl-2 d-xxl-flex">
+                    <div class="d-xxl-flex justify-content-xxl-center" style="position: sticky;"><img class="img-fluid" src="assets/img/la-psia.webp" style="border-radius: 274px;"></div>
+                </div>
+                <div class="col-md-6 col-xxl-4 offset-xxl-0 d-xxl-flex justify-content-xxl-start align-items-xxl-center" style="color: #ffffff;">
+                    <div>
+                        <div>
+                            <h1 style="font-size: 1.4rem;"><strong>ENTRENA TUS HABILIDADES</strong></h1>
+                            <h1 style="font-size: 4.2rem;color: rgb(255,255,255);font-weight: 700 !important;"><strong>PRÁCTICAS</strong></h1>
+                        </div>
+                        <div class="d-xxl-flex" style="background-color: #f9b233;padding: 10px;border-radius: 10px;position: relative;max-width: 240px;">
+                            <h1 style="font-size: 1.2rem;color: #313437;"><strong>DESDE HOY CON PSIA</strong></h1>
+                        </div>
+                        <div>
+                            <p style="margin-top: 9px;">TU MENTORA VIRTUAL EN PSICOLOGÍA</p>
+                        </div>
+                        <div style="margin-top: 63px;"><!-- BOTÓN PARA ABRIR EL POPUP -->
+<button onclick="document.getElementById('popupWidget4').style.display='flex'" style="padding: 10px 20px; border: none; background-color: #ff671b; color: white; border-radius: 10px; cursor: pointer;">
+  Empezar
+</button>
+
+<!-- MODAL CONTENEDOR -->
+<div id="popupWidget4" style="display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100vh;background: rgba(0,0,0,0.85);backdrop-filter: blur(4px);-webkit-backdrop-filter: blur(4px);justify-content: center;align-items: center;flex-direction: column;z-index: 9999;">
+  
+  <!-- BOTÓN ✕ -->
+  <button onclick="document.getElementById('popupWidget4').style.display='none'" style="
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 10000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+    ✕
+  </button>
+
+  <!-- TEXTO CENTRAL -->
+  <div id="popupContent" style="color: white; text-align: center; font-size: 16px; font-weight: 500; max-width: 370px; margin-bottom: 24px; opacity: 0; transform: translateY(20px); animation: fadeUp 1s ease-out forwards;">
+    Durante 1 minuto prueba cómo las simulaciones con Psía te permiten aplicar lo aprendido en clase y desarrollar tus habilidades profesionales de forma segura y efectiva
+  </div>
+
+  <!-- WIDGET DE ELEVENLABS -->
+  <elevenlabs-convai agent-id="agent_01jwy0pjsfe1cvrf34mg6fwjm9"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+  <style>
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <script>
+    const moverWidget = setInterval(() => {
+      const widgetContenedor = document.querySelector('[data-testid="convai-widget-launcher-container"]');
+      if (widgetContenedor) {
+        widgetContenedor.style.position = 'fixed';
+        widgetContenedor.style.bottom = '24px';
+        widgetContenedor.style.right = '24px';
+        widgetContenedor.style.top = 'auto';
+        widgetContenedor.style.left = 'auto';
+        widgetContenedor.style.zIndex = '9999';
+        clearInterval(moverWidget);
+      }
+    }, 200);
+  </script>
+
+</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/from.js"></script>
+</body>
+
+</html>
